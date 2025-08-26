@@ -2,14 +2,14 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "**" ]
+    branches:
+      - 'master'
+      - '!tests_ajg'
   pull_request:
-    branches: [ "**" ]
-  workflow_run:
-    workflows: [ "Build" ]
-    types: [ requested ]
-    branches-ignore:
-      - "tests_ajg"
+    branches:
+      - 'master'
+      - '!tests_ajg'
+
 
 jobs:
   build:
