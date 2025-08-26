@@ -17,7 +17,7 @@ public class Main {
         } else if (number % 3 == 0) {
             return "Fizz";
         } else if (number % 5 == 0) {
-            return "BuzzZZZ";
+            return "Buzz";
         } else {
             return String.valueOf(number);
         }
